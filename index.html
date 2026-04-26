@@ -378,12 +378,7 @@ footer strong { color:var(--orange-light); }
 
 <!-- ═══════════════════════════════════════════
   HERO
-  → Add your photo as: <section class="hero" style="background-image: url('images/hero-bg.jpg');">
-  <div class="hero-content">
-    <h1>Joel Kiarie</h1>
-    <p>Financial Advisor</p>
-  </div>
-</section>
+  → Add your photo as: images/hero-bg.jpg
 ═══════════════════════════════════════════ -->
 <section class="hero" id="top">
   <div class="hero-bg" id="heroBg"></div>
@@ -433,11 +428,7 @@ footer strong { color:var(--orange-light); }
 
 <!-- ═══════════════════════════════════════════
   FINANCIAL ADVICE
-  → Add your photo as:  <section class="card">
-  <h2>Financial Advice</h2>
-  <img src="images/financial-advice.jpg" alt="Financial Advice" loading="lazy">
-  <p>Learn how to manage money effectively...</p>
-</section>
+  → Add your photo as:  images/financial-advice.jpg
 ═══════════════════════════════════════════ -->
 <div id="financial-advice" class="section-header"><h2>Financial Advice</h2></div>
 <section class="service-section">
@@ -462,11 +453,7 @@ footer strong { color:var(--orange-light); }
 
 <!-- ═══════════════════════════════════════════
   SAVING MONEY
-  → Add your photo as:  <section class="card">
-  <h2>Saving Money</h2>
-  <img src="images/saving-money.jpg" alt="Saving Money" loading="lazy">
-  <p>Build strong saving habits and financial discipline...</p>
-</section>
+  → Add your photo as:  images/saving-money.jpg
 ═══════════════════════════════════════════ -->
 <div id="saving-money" class="section-header"><h2>Saving Money</h2></div>
 <section class="service-section">
@@ -491,11 +478,7 @@ footer strong { color:var(--orange-light); }
 
 <!-- ═══════════════════════════════════════════
   MARKETING TRENDS
-  → Add your photo as:  <section class="card">
-  <h2>Marketing Trends</h2>
-  <img src="images/marketing-trends.jpg" alt="Marketing Trends" loading="lazy">
-  <p>Stay updated with modern marketing strategies...</p>
-</section>
+  → Add your photo as: images/marketing-trends.jpg
 ═══════════════════════════════════════════ -->
 <div id="marketing-trends" class="section-header"><h2>Marketing Trends</h2></div>
 <section class="service-section">
@@ -519,11 +502,7 @@ footer strong { color:var(--orange-light); }
 </section>
   <!-- ═══════════════════════════════════════════
   FINANCIAL SECURITY
-  → Add your photo as:  <section class="card">
-  <h2>Financial Security</h2>
-  <img src="images/financial-security.jpg" alt="Financial Security" loading="lazy">
-  <p>Protect your money and reduce financial risks...</p>
-</section>
+  →Add your photo as:  images/financial-security.jpg
 ═══════════════════════════════════════════ -->
 <div id="financial-security" class="section-header"><h2>Financial Security</h2></div>
 <section class="service-section">
@@ -548,11 +527,7 @@ footer strong { color:var(--orange-light); }
 
 <!-- ═══════════════════════════════════════════
   FINANCIAL STRATEGY
-  → Add your photo as:  <section class="card">
-  <h2>Financial Strategy</h2>
-  <img src="images/financial-strategy.jpg" alt="Financial Strategy" loading="lazy">
-  <p>Plan long-term financial growth and stability...</p>
-</section>
+  → Add your photo as:  images/financial-strategy.jpg
 ═══════════════════════════════════════════ -->
 <div id="financial-strategy" class="section-header"><h2>Financial Strategy</h2></div>
 <section class="service-section">
@@ -862,20 +837,19 @@ footer strong { color:var(--orange-light); }
   </div>
 </div>
   <script>
-<!-- ─── GALLERY SECTION ─── -->
-<div id="gallery">
 
-  <img src="images/gallery-1.jpg" alt="Gallery 1">
-  <img src="images/gallery-2.jpg" alt="Gallery 2">
-  <img src="images/gallery-3.jpg" alt="Gallery 3">
-  <img src="images/gallery-4.jpg" alt="Gallery 4">
-  <img src="images/gallery-5.jpg" alt="Gallery 5">
-  <img src="images/gallery-6.jpg" alt="Gallery 6">
-  <img src="images/gallery-7.jpg" alt="Gallery 7">
-  <img src="images/gallery-8.jpg" alt="Gallery 8">
-
-</div>
-  
+  /* ─── GALLERY — builds items dynamically ─── */
+const GALLERY_IMAGES = [
+  { src:'images/gallery-1.jpg', label:'Photo 1' },
+  { src:'images/gallery-2.jpg', label:'Photo 2' },
+  { src:'images/gallery-3.jpg', label:'Photo 3' },
+  { src:'images/gallery-4.jpg', label:'Photo 4' },
+  { src:'images/gallery-5.jpg', label:'Photo 5' },
+  { src:'images/gallery-6.jpg', label:'Photo 6' },
+  { src:'images/gallery-7.jpg', label:'Photo 7' },
+  { src:'images/gallery-8.jpg', label:'Photo 8' },
+];
+     
 
 const grid = document.getElementById('galleryGrid');
 GALLERY_IMAGES.forEach((img, i) => {
